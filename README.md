@@ -22,9 +22,15 @@ This project simulates that scenario with 140 shipment records, deliberately shi
 - On time performance **dropped sharply from June to July 2026**, worth flagging as a trend to dig into further
 - Total order value across all shipments: **EUR 126,797**
 
-## Screenshot (Streamlit version)
+## Screenshots
 
-![Dashboard screenshot](screenshots/streamlit_dashboard.png)
+**Streamlit version**
+
+![Streamlit dashboard screenshot](screenshots/streamlit_dashboard.png)
+
+**Power BI version**
+
+![Power BI dashboard screenshot](screenshots/powerbi_dashboard.png)
 
 ## Two tools, same data, deliberately
 
@@ -55,7 +61,8 @@ bertus_delivery_dashboard/
 ├── reference/
 │   └── Bertus Delivery Performance Dashboard (finished reference example).xlsx
 └── screenshots/
-    └── streamlit_dashboard.png
+    ├── streamlit_dashboard.png
+    └── powerbi_dashboard.png
 ```
 
 ## How to run it
