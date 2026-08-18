@@ -1,0 +1,141 @@
+shipment_id,order_date,customer_type,destination_country,product_category,carrier,promised_delivery_date,actual_delivery_date,delay_reason,order_value_eur
+SH0001,2026-04-29,Independent Store,Germany,Vinyl,UPS,2026-05-02,2026-05-02,,223
+SH0002,2026-07-18,Online Retailer,United Kingdom,Vinyl,UPS,2026-07-21,2026-07-25,Customs hold,452
+SH0003,2026-07-17,Independent Store,Germany,Merchandise,DPD,2026-07-23,2026-07-22,,614
+SH0004,2026-05-10,Independent Store,Netherlands,Merchandise,PostNL,2026-05-16,2026-05-15,,780
+SH0005,2026-06-28,Online Retailer,Netherlands,Merchandise,PostNL,2026-07-05,2026-07-04,,1175
+SH0006,2026-06-15,Independent Store,United States,CD,DPD,2026-06-23,2026-06-23,,208
+SH0007,2026-05-30,Online Retailer,Belgium,CD,DPD,2026-06-03,2026-06-02,,772
+SH0008,2026-05-24,Online Retailer,United States,CD,UPS,2026-05-31,2026-05-31,,1538
+SH0009,2026-06-02,Online Retailer,United States,CD,DPD,2026-06-07,2026-06-06,,1771
+SH0010,2026-04-15,Retail Chain,Belgium,Vinyl,DHL,2026-04-21,2026-04-20,,1206
+SH0011,2026-06-20,Online Retailer,France,CD,DPD,2026-06-26,2026-06-25,,330
+SH0012,2026-06-03,Online Retailer,France,DVD,DHL,2026-06-10,2026-06-09,,328
+SH0013,2026-08-09,Independent Store,United States,CD,GLS,2026-08-19,2026-08-20,Carrier delay,1266
+SH0014,2026-04-17,Online Retailer,Belgium,Vinyl,PostNL,2026-04-26,2026-04-25,,1441
+SH0015,2026-06-08,Retail Chain,Netherlands,DVD,UPS,2026-06-16,2026-06-23,Customs hold,1605
+SH0016,2026-05-16,Online Retailer,United Kingdom,CD,DHL,2026-05-20,2026-05-19,,810
+SH0017,2026-05-12,Independent Store,Netherlands,DVD,DPD,2026-05-15,2026-05-14,,535
+SH0018,2026-04-15,Independent Store,United States,Merchandise,PostNL,2026-04-21,2026-04-21,,1602
+SH0019,2026-05-03,Retail Chain,United Kingdom,Merchandise,DHL,2026-05-08,2026-05-08,,1149
+SH0020,2026-05-22,Retail Chain,United Kingdom,Merchandise,PostNL,2026-05-29,2026-05-28,,552
+SH0021,2026-05-28,Online Retailer,Germany,Vinyl,PostNL,2026-06-01,2026-06-01,,1494
+SH0022,2026-04-16,Independent Store,United Kingdom,CD,DPD,2026-04-22,2026-04-23,Stock shortage,1415
+SH0023,2026-08-03,Independent Store,France,Merchandise,DHL,2026-08-09,2026-08-08,,238
+SH0024,2026-04-25,Retail Chain,United States,Vinyl,PostNL,2026-05-04,2026-05-03,,169
+SH0025,2026-07-13,Independent Store,Germany,CD,UPS,2026-07-21,2026-07-21,,963
+SH0026,2026-05-06,Independent Store,France,Vinyl,PostNL,2026-05-15,2026-05-23,Customs hold,1380
+SH0027,2026-04-04,Independent Store,France,Merchandise,GLS,2026-04-08,2026-04-08,,482
+SH0028,2026-07-12,Retail Chain,France,DVD,GLS,2026-07-15,2026-07-16,Documentation error,1471
+SH0029,2026-08-03,Online Retailer,United States,Vinyl,DPD,2026-08-08,2026-08-12,Carrier delay,162
+SH0030,2026-04-13,Independent Store,United Kingdom,Vinyl,DHL,2026-04-23,2026-04-23,,185
+SH0031,2026-04-18,Online Retailer,United Kingdom,Vinyl,UPS,2026-04-24,2026-04-24,,212
+SH0032,2026-07-17,Online Retailer,United States,DVD,DHL,2026-07-25,2026-07-25,,588
+SH0033,2026-07-11,Retail Chain,Belgium,Vinyl,PostNL,2026-07-16,2026-07-15,,983
+SH0034,2026-04-26,Independent Store,Belgium,Vinyl,DHL,2026-04-30,2026-04-29,,801
+SH0035,2026-06-12,Online Retailer,United States,Vinyl,UPS,2026-06-17,2026-06-16,,658
+SH0036,2026-04-27,Independent Store,Belgium,DVD,UPS,2026-05-02,2026-05-04,Weather,476
+SH0037,2026-06-27,Online Retailer,France,DVD,PostNL,2026-07-03,2026-07-02,,234
+SH0038,2026-07-18,Online Retailer,Belgium,CD,GLS,2026-07-25,2026-07-31,Customs hold,1174
+SH0039,2026-07-19,Independent Store,Belgium,CD,GLS,2026-07-22,2026-07-25,Weather,306
+SH0040,2026-04-11,Retail Chain,Germany,CD,PostNL,2026-04-18,2026-04-18,,769
+SH0041,2026-07-14,Independent Store,Germany,Merchandise,PostNL,2026-07-19,2026-07-19,,412
+SH0042,2026-06-25,Retail Chain,Germany,Vinyl,GLS,2026-07-04,2026-07-04,,124
+SH0043,2026-07-30,Retail Chain,Germany,CD,PostNL,2026-08-05,2026-08-13,Stock shortage,1396
+SH0044,2026-05-20,Retail Chain,Belgium,Merchandise,UPS,2026-05-29,2026-05-29,,723
+SH0045,2026-04-08,Independent Store,United Kingdom,DVD,PostNL,2026-04-12,2026-04-11,,267
+SH0046,2026-07-21,Retail Chain,United Kingdom,Vinyl,GLS,2026-07-29,2026-07-28,,1225
+SH0047,2026-05-19,Online Retailer,United Kingdom,CD,DPD,2026-05-26,2026-06-02,Carrier delay,928
+SH0048,2026-04-18,Online Retailer,Belgium,DVD,GLS,2026-04-26,2026-04-26,,713
+SH0049,2026-07-13,Retail Chain,United States,Merchandise,DHL,2026-07-20,2026-07-20,,1305
+SH0050,2026-06-17,Retail Chain,Belgium,CD,GLS,2026-06-26,2026-06-26,,1654
+SH0051,2026-06-22,Online Retailer,France,CD,PostNL,2026-07-02,2026-07-02,,626
+SH0052,2026-08-10,Independent Store,Germany,CD,PostNL,2026-08-18,2026-08-22,Stock shortage,139
+SH0053,2026-06-02,Retail Chain,France,CD,GLS,2026-06-12,2026-06-12,,1057
+SH0054,2026-07-12,Retail Chain,Germany,CD,UPS,2026-07-18,2026-07-19,Carrier delay,996
+SH0055,2026-04-13,Retail Chain,Germany,Merchandise,UPS,2026-04-19,2026-04-19,,1189
+SH0056,2026-06-21,Online Retailer,France,CD,GLS,2026-07-01,2026-06-30,,966
+SH0057,2026-06-06,Online Retailer,France,CD,DPD,2026-06-12,2026-06-11,,945
+SH0058,2026-04-20,Online Retailer,Netherlands,CD,DHL,2026-04-27,2026-05-03,Stock shortage,518
+SH0059,2026-07-08,Retail Chain,France,DVD,UPS,2026-07-13,2026-07-13,,999
+SH0060,2026-07-16,Online Retailer,United States,Vinyl,UPS,2026-07-19,2026-07-26,Documentation error,824
+SH0061,2026-08-01,Retail Chain,France,CD,GLS,2026-08-04,2026-08-03,,494
+SH0062,2026-06-09,Retail Chain,United States,Merchandise,DHL,2026-06-18,2026-06-17,,1766
+SH0063,2026-07-29,Retail Chain,United Kingdom,Vinyl,PostNL,2026-08-03,2026-08-03,,1361
+SH0064,2026-07-19,Independent Store,Belgium,Merchandise,DPD,2026-07-24,2026-07-24,,478
+SH0065,2026-07-26,Retail Chain,France,DVD,PostNL,2026-08-03,2026-08-02,,1008
+SH0066,2026-04-05,Independent Store,United States,Vinyl,PostNL,2026-04-08,2026-04-07,,1589
+SH0067,2026-04-08,Independent Store,Germany,CD,GLS,2026-04-14,2026-04-15,Weather,1416
+SH0068,2026-04-30,Retail Chain,Germany,Vinyl,DHL,2026-05-06,2026-05-05,,682
+SH0069,2026-04-28,Retail Chain,United States,CD,PostNL,2026-05-01,2026-04-30,,1257
+SH0070,2026-06-02,Online Retailer,United Kingdom,Vinyl,UPS,2026-06-06,2026-06-05,,1647
+SH0071,2026-04-11,Independent Store,United Kingdom,DVD,PostNL,2026-04-19,2026-04-18,,1784
+SH0072,2026-07-17,Online Retailer,Germany,Merchandise,DHL,2026-07-27,2026-08-02,Documentation error,1547
+SH0073,2026-08-12,Retail Chain,France,DVD,DPD,2026-08-19,2026-08-18,,1789
+SH0074,2026-06-02,Retail Chain,United Kingdom,Merchandise,DPD,2026-06-06,2026-06-14,Customs hold,103
+SH0075,2026-08-05,Retail Chain,Belgium,DVD,UPS,2026-08-13,2026-08-17,Stock shortage,1481
+SH0076,2026-06-10,Independent Store,Germany,Merchandise,GLS,2026-06-13,2026-06-13,,1182
+SH0077,2026-06-01,Retail Chain,Netherlands,Vinyl,DPD,2026-06-11,2026-06-10,,498
+SH0078,2026-07-13,Retail Chain,United Kingdom,DVD,GLS,2026-07-19,2026-07-18,,1572
+SH0079,2026-06-24,Retail Chain,Belgium,CD,PostNL,2026-07-02,2026-07-01,,1522
+SH0080,2026-05-20,Independent Store,Germany,Merchandise,DPD,2026-05-28,2026-06-06,Customs hold,1528
+SH0081,2026-08-13,Retail Chain,Germany,DVD,DHL,2026-08-20,2026-08-20,,664
+SH0082,2026-04-04,Retail Chain,United States,CD,GLS,2026-04-09,2026-04-10,Weather,255
+SH0083,2026-04-04,Retail Chain,Germany,Vinyl,DPD,2026-04-11,2026-04-10,,1023
+SH0084,2026-04-30,Online Retailer,United States,Vinyl,DHL,2026-05-04,2026-05-04,,350
+SH0085,2026-06-17,Online Retailer,France,CD,UPS,2026-06-21,2026-06-21,,824
+SH0086,2026-07-25,Retail Chain,United Kingdom,Vinyl,UPS,2026-08-04,2026-08-03,,1560
+SH0087,2026-04-26,Online Retailer,Netherlands,CD,DHL,2026-05-02,2026-05-01,,400
+SH0088,2026-04-20,Retail Chain,Belgium,Vinyl,DHL,2026-04-25,2026-05-03,Weather,635
+SH0089,2026-06-12,Online Retailer,United Kingdom,CD,GLS,2026-06-22,2026-06-26,Stock shortage,280
+SH0090,2026-05-28,Independent Store,Netherlands,CD,DPD,2026-06-02,2026-06-02,,1263
+SH0091,2026-06-13,Retail Chain,United Kingdom,Merchandise,GLS,2026-06-23,2026-06-28,Documentation error,209
+SH0092,2026-04-11,Independent Store,Netherlands,CD,UPS,2026-04-20,2026-04-19,,1247
+SH0093,2026-04-06,Retail Chain,United Kingdom,Merchandise,DPD,2026-04-13,2026-04-13,,416
+SH0094,2026-07-21,Retail Chain,France,DVD,DPD,2026-07-31,2026-07-30,,1417
+SH0095,2026-04-27,Retail Chain,United States,Merchandise,UPS,2026-05-02,2026-05-01,,120
+SH0096,2026-07-26,Independent Store,France,Vinyl,UPS,2026-07-30,2026-07-29,,991
+SH0097,2026-07-15,Retail Chain,United States,Merchandise,PostNL,2026-07-18,2026-07-24,Weather,461
+SH0098,2026-06-08,Online Retailer,France,Vinyl,PostNL,2026-06-13,2026-06-12,,1335
+SH0099,2026-06-01,Online Retailer,France,Vinyl,DHL,2026-06-06,2026-06-06,,1768
+SH0100,2026-04-30,Retail Chain,United States,DVD,UPS,2026-05-10,2026-05-10,,1489
+SH0101,2026-06-09,Independent Store,France,CD,GLS,2026-06-18,2026-06-17,,435
+SH0102,2026-08-09,Retail Chain,Belgium,DVD,PostNL,2026-08-14,2026-08-13,,624
+SH0103,2026-06-16,Online Retailer,France,DVD,DPD,2026-06-26,2026-06-25,,1175
+SH0104,2026-07-06,Online Retailer,Germany,Merchandise,DHL,2026-07-16,2026-07-16,,1798
+SH0105,2026-07-15,Online Retailer,France,Merchandise,DHL,2026-07-18,2026-07-17,,1059
+SH0106,2026-04-10,Independent Store,France,Vinyl,UPS,2026-04-15,2026-04-14,,980
+SH0107,2026-04-04,Independent Store,France,DVD,DPD,2026-04-09,2026-04-09,,1321
+SH0108,2026-07-11,Retail Chain,United States,Merchandise,UPS,2026-07-15,2026-07-14,,118
+SH0109,2026-04-18,Independent Store,United States,Vinyl,GLS,2026-04-24,2026-04-23,,246
+SH0110,2026-04-26,Independent Store,Belgium,Vinyl,DPD,2026-05-06,2026-05-11,Carrier delay,779
+SH0111,2026-07-05,Online Retailer,United States,CD,DHL,2026-07-14,2026-07-23,Documentation error,403
+SH0112,2026-04-21,Retail Chain,United Kingdom,CD,DHL,2026-04-30,2026-04-30,,989
+SH0113,2026-06-05,Retail Chain,United States,CD,PostNL,2026-06-15,2026-06-16,Documentation error,949
+SH0114,2026-06-28,Online Retailer,Belgium,Merchandise,DPD,2026-07-05,2026-07-04,,452
+SH0115,2026-07-08,Retail Chain,United Kingdom,DVD,DPD,2026-07-18,2026-07-25,Weather,89
+SH0116,2026-07-11,Online Retailer,France,DVD,DHL,2026-07-18,2026-07-19,Weather,1288
+SH0117,2026-06-30,Online Retailer,United States,CD,PostNL,2026-07-06,2026-07-05,,1330
+SH0118,2026-04-11,Online Retailer,Belgium,CD,PostNL,2026-04-18,2026-04-18,,649
+SH0119,2026-06-23,Retail Chain,United Kingdom,DVD,DHL,2026-07-02,2026-07-05,Weather,571
+SH0120,2026-08-02,Independent Store,France,Vinyl,DHL,2026-08-09,2026-08-08,,1589
+SH0121,2026-05-28,Independent Store,France,Vinyl,DPD,2026-06-06,2026-06-05,,1143
+SH0122,2026-05-02,Online Retailer,France,DVD,PostNL,2026-05-12,2026-05-11,,1427
+SH0123,2026-05-30,Online Retailer,Germany,Vinyl,GLS,2026-06-09,2026-06-18,Stock shortage,1480
+SH0124,2026-06-17,Retail Chain,France,Vinyl,PostNL,2026-06-26,2026-06-27,Carrier delay,525
+SH0125,2026-05-05,Online Retailer,United States,CD,GLS,2026-05-14,2026-05-13,,1386
+SH0126,2026-04-26,Independent Store,United States,DVD,DHL,2026-05-06,2026-05-05,,953
+SH0127,2026-07-23,Online Retailer,Belgium,DVD,PostNL,2026-07-29,2026-07-29,,860
+SH0128,2026-06-10,Independent Store,United States,CD,UPS,2026-06-16,2026-06-15,,88
+SH0129,2026-04-13,Independent Store,Netherlands,CD,UPS,2026-04-21,2026-04-24,Weather,487
+SH0130,2026-05-30,Retail Chain,Germany,CD,UPS,2026-06-07,2026-06-07,,558
+SH0131,2026-05-15,Independent Store,Netherlands,DVD,DHL,2026-05-19,2026-05-19,,1250
+SH0132,2026-06-22,Online Retailer,France,Vinyl,PostNL,2026-06-25,2026-06-26,Customs hold,1020
+SH0133,2026-07-24,Retail Chain,United Kingdom,CD,UPS,2026-08-01,2026-08-01,,133
+SH0134,2026-08-12,Independent Store,France,Merchandise,GLS,2026-08-19,2026-08-19,,1450
+SH0135,2026-04-28,Independent Store,Netherlands,DVD,UPS,2026-05-08,2026-05-07,,348
+SH0136,2026-04-17,Retail Chain,United Kingdom,DVD,GLS,2026-04-22,2026-05-01,Stock shortage,1080
+SH0137,2026-07-20,Online Retailer,United States,CD,GLS,2026-07-24,2026-07-24,,969
+SH0138,2026-05-29,Retail Chain,France,Vinyl,DPD,2026-06-07,2026-06-06,,919
+SH0139,2026-06-20,Online Retailer,France,Vinyl,PostNL,2026-06-27,2026-06-27,,1748
+SH0140,2026-04-22,Independent Store,United Kingdom,Vinyl,UPS,2026-04-26,2026-04-25,,1195
