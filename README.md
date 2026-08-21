@@ -6,6 +6,8 @@
 ![Plotly](https://img.shields.io/badge/Plotly-visualization-3F4F75)
 ![Power BI](https://img.shields.io/badge/Power%20BI-dashboard-F2C811)
 
+**[Open the live dashboard](https://bertus-delivery-performance-dashboard.streamlit.app/)**, no install needed.
+
 An end to end delivery performance analytics project, built twice: once in Python (pandas, Plotly, Streamlit) and once in Power BI (Power Query, DAX), on the same dataset. Built to practice the exact SLA and delay reporting an operations or supply chain analyst role would own.
 
 ## The business problem
