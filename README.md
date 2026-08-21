@@ -20,19 +20,7 @@ The raw dataset (`data/bertus_shipments_raw.csv`) is 140 synthetic shipment reco
 
 It ships dirty in two ways that mirror how operational data usually looks before an analyst gets to it. First, the three date fields are plain text, not real date objects, so nothing can be compared or aggregated until they're parsed. Second, none of the fields an analyst actually needs exist yet: whether a shipment was late, by how many days, and which calendar month it belongs to all have to be derived rather than read off the sheet. The delay_reason field is blank for the 103 shipments that arrived on time, which also has to be handled explicitly rather than silently dropped or mistaken for missing data.
 
-## How the numbers are calculated
-
-Everything downstream comes from three derived fields, computed the same way in both the Python and Power BI versions:
-
-- **delay_days**: actual delivery date minus promised delivery date, in days. Positive means the shipment arrived after its promise date; zero or negative means on time or early.
-- **is_late**: true when delay_days is greater than zero. Every other metric in the dashboard rolls up from this one flag.
-- **order_month**: the order date truncated to its calendar month, used to build the on time trend line.
-
-From there, the headline metrics are straightforward aggregates over is_late and order_value_eur. On time rate is one minus the average of is_late, expressed as a percentage, i.e. the share of shipments that did not run late. Average delay when late is the mean of delay_days, but only over the rows where is_late is true, since on time shipments have no delay to average in. On time rate by carrier, by month, and by destination country is the same on time rate formula, just grouped by that column instead of computed over the whole dataset. The delay reason breakdown is a count of delay_reason, filtered to late shipments only.
-
-In the Python version this is plain pandas: parse the three date columns with `pd.to_datetime`, subtract to get delay_days, threshold to get is_late, fill the blank delay_reason values with "On time", then `.groupby()` for every breakdown. The Power BI version splits the same logic across two layers: Power Query (M) does the date parsing and column derivation at load time, and DAX measures do the ratio and average calculations, so the on time rate and average delay recalculate live as the report's carrier, country, or customer type filters change.
-
-## Key findings & recommendations
+## Key findings and recommendations
 
 Overall on time rate is 73.6%. Of the 140 shipments, 37 ran late, accounting for EUR 31,094 of the EUR 126,797 in total order value, close to a quarter of everything shipped. That's frequent enough, and touches enough order value, to justify a standing SLA review rather than an isolated fix.
 
@@ -42,50 +30,43 @@ Weather is the single largest cause of delay, responsible for 27% of all late sh
 
 On time performance dropped sharply from June to July 2026. **Recommendation:** before treating that drop as a new baseline, check whether it tracks a change in carrier mix, order volume, or seasonal weather exposure over the same window. A trend like this is a starting point for investigation, not a finding to act on by itself.
 
-## Screenshots
+One caveat: with only 140 shipments in this sample, carrier level differences carry real uncertainty. The confidence interval view on the Carrier reliability page shows some carriers' ranges overlap, so it's worth confirming GLS's gap holds up as more shipment data comes in before committing budget to rerouting.
 
-**Streamlit version**
+Next steps, in order of effort: reroute GLS's most exposed lanes first, since it needs no new tooling. Pilot a weather based delivery buffer for one quarter on the routes most affected. Then set a monthly on time rate review, so a drop like the one from June to July gets caught and investigated within weeks instead of a quarter later.
+
+## Dashboard
+
+Three fields are derived before any of this: delay_days (actual delivery date minus promised delivery date), is_late (true when delay_days is greater than zero), and order_month (the order date rounded to its calendar month). Every chart below builds on those three fields, computed with pandas in the Streamlit version and with Power Query plus DAX in the Power BI version.
+
+**Overview**
+
+On time rate is one minus the average of is_late, shown against an assumed SLA target so the gap reads in percentage points. The line chart tracks on time rate by month, and the bar chart ranks it by carrier.
 
 ![Streamlit dashboard screenshot](screenshots/streamlit_dashboard.png)
+
+**Carrier reliability**
+
+Adds a 95% confidence interval to each carrier's on time rate, using the Wilson method. This is the range the true rate likely falls in, so where two carriers' ranges overlap, the data cannot yet tell them apart. The table also shows value at risk: the total order value tied to each carrier's late shipments.
+
 ![Streamlit dashboard screenshot](screenshots/streamlit_dashboard_carrierreliability.png)
+
+**Destinations**
+
+A heat map of on time rate for every carrier and country pair, so a weak route shows up directly instead of being hidden inside a carrier or country average.
+
 ![Streamlit dashboard screenshot](screenshots/streamlit_dashboard_destinationperformance.png)
+
+**Delay root cause**
+
+Ranks delay reasons by count, then adds a running total line showing what share of all delays each reason covers, so you can see how many causes you would need to fix to clear most of the problem. The box plot shows the full spread of delay days per carrier, not just the average, and unusually long delays are flagged as outliers using a standard statistical rule.
+
+![Streamlit dashboard screenshot](screenshots/streamlit_dashboard_delayrootcause.png)
 
 **Power BI version**
 
+The same core numbers (on time rate, average delay, and the breakdowns by carrier, month, and country) rebuilt in Power Query and DAX. The confidence intervals, value at risk, heat map, and outlier flags above are Streamlit only for now, since porting them means writing the same logic by hand in DAX.
+
 ![Power BI dashboard screenshot](screenshots/powerbi_dashboard.png)
-
-## Two tools, same data, deliberately
-
-Built twice on purpose, to compare how the same analysis looks in a coding tool versus a business intelligence tool:
-
-| | Python / Streamlit | Power BI |
-|---|---|---|
-| Data cleaning | pandas | Power Query (M language) |
-| Calculations | plain Python | DAX measures |
-| Visualization | Plotly | native Power BI visuals |
-| How to open it | `streamlit run app.py` | open `bertus_delivery_dashboard.pbix` |
-
-## Project structure
-
-```
-bertus_delivery_dashboard/
-├── app.py                              # Streamlit dashboard (Python)
-├── bertus_delivery_dashboard.pbix      # Power BI dashboard
-├── requirements.txt
-├── data/
-│   └── bertus_shipments_raw.csv        # raw, deliberately uncleaned shipment data
-├── scripts/
-│   └── generate_raw_data.py            # generates the synthetic dataset
-├── notebooks/
-│   ├── Bertus_Delivery_Analysis.ipynb
-│   ├── Bertus_Delivery_Walkthrough.ipynb
-│   └── build_notebook.py
-├── reference/
-│   └── Bertus Delivery Performance Dashboard (finished reference example).xlsx
-└── screenshots/
-    ├── streamlit_dashboard.png
-    └── powerbi_dashboard.png
-```
 
 ## How to run it
 
@@ -105,6 +86,6 @@ All data is synthetic, generated by `scripts/generate_raw_data.py`. It is modele
 
 ## About
 
-Built by Adrian Vanderlinder, moving into logistics, operations and data roles.
+Built by Adrian Vanderlinder.
 
 [LinkedIn](https://www.linkedin.com/in/adrian-vanderlinder-azcona-59b1299b) · [GitHub](https://github.com/adrianjva18) · adrian.azcona18@gmail.com
