@@ -46,7 +46,7 @@ On-time performance dropped sharply from June to July 2026. **Recommendation:** 
 
 **Streamlit version**
 
-![Streamlit dashboard screenshot](screenshots/streamlit_dashboard.png)
+![Streamlit dashboard screenshot](streamlit_dashboard_sc1.png)
 
 **Power BI version**
 
