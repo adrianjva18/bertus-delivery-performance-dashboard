@@ -48,6 +48,7 @@ On-time performance dropped sharply from June to July 2026. **Recommendation:** 
 
 ![Streamlit dashboard screenshot](screenshots/streamlit_dashboard.png)
 ![Streamlit dashboard screenshot](screenshots/streamlit_dashboard_carrierreliability.png)
+![Streamlit dashboard screenshot](screenshots/streamlit_dashboard_destinationperformance.png)
 
 **Power BI version**
 
